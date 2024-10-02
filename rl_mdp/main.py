@@ -23,7 +23,7 @@ def main() -> None:
     print("Policy 1 TD:", td1)
     print("Policy 2 TD:", td2)
 
-    td_lambda_evaluator = TDEvaluator(mdp, 0.1)
+    td_lambda_evaluator = TDLambdaEvaluator(mdp, 0.1, 0.5)
     tdl1 = td_lambda_evaluator.evaluate(policy_1, 1000)
     tdl2 = td_lambda_evaluator.evaluate(policy_2, 1000)
     print("Policy 1 TD Lambda:", tdl1)
