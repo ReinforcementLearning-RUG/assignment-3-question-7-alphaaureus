@@ -30,6 +30,5 @@ def main() -> None:
     print("Policy 2 TD Lambda:", tdl2)
 
 
-
 if __name__ == "__main__":
     main()
